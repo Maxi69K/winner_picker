@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner Picker</title>
+    <meta name="description" content="Pull out a random name, izvucite nasumicno ime">
+    <meta name="keywords" content="Pull, izvucite pobednika, Winner Picker ">
+    <meta name="author" content="Goran Kekez">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <h1>Winner Picker</h1>
+                <h4>To finish type end</h4>
+                <div class="form-group">
+                    <label for="addNames">Names of participants:</label>
+                    <input type="text" id="addNames" name="addNames" placeholder="enter names" minlength="3" required>
+                </div>
+                <button id="addBtn">Add</button>
+                <button id="resBtn">Reset</button>
+                <h2 id="winText">Winner is:</h2>
+                <div id="winnerBox"></div>
+                <h3 id="parText">Participants:</h3>
+                <div id="partBox"></div>
+                <footer class="myFooter">
+                    <small>&copy; 2022 Winner Picker by <a target="_blank" href="https://webdizajn.eu.org">Maxi</a>. All
+                        RightsReserved.</small>
+                </footer>
+            </div>
+        </div>
+
+    </main>
+
+    <audio id="addSound" src="sound/add.wav"></audio>
+    <audio id="winSound" src="sound/winner.wav"></audio>
+
+    <script src="js/main.js"></script>
+    <noscript>JavaScript not enabled!</noscript>
+</body>
+
+</html>
